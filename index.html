@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>&lt;EduAR&gt; example</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="demo-styles.css">
+    
+    <!-- The following libraries and polyfills are recommended to maximize browser support -->
+    <!-- NOTE: you must adjust the paths as appropriate for your project -->
+    
+    <!-- 💁 OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+
+  </head> 
+<body>
+  <div id="card">
+    <!-- All you need to put beautiful, interactive 3D content on your site: -->
+    <model-viewer src="https://cdn.glitch.global/5c279e8e-ce0a-48bf-b2a7-08009f642dd5/skeletalS.glb?v=1650717821478"
+                  ios-src="https://cdn.glitch.global/5c279e8e-ce0a-48bf-b2a7-08009f642dd5/skeletal.usdz?v=1650717842570"
+                  poster="https://cdn.glitch.global/5c279e8e-ce0a-48bf-b2a7-08009f642dd5/skeleton.png?v=1650713711350"
+                  alt="A 3D model of an astronaut"
+                  shadow-intensity="1"
+                  camera-controls
+                  auto-rotate ar>
+    </model-viewer>
+    <section class="attribution">
+      <span>
+        <h1>EduAR</h1>
+        <span>The Human Skeleton</span>
+      </span>
+      
+    </section>
+    
+  </div>
+  
+  
+  <footer>
+    <span>The human skeleton is the internal framework of the human body. It is composed of around 270 bones at birth – this total decreases to around 206 bones by adulthood after some bones get fused together.</span>
+
+    
+  </footer>
+  
+  
+  <!-- 💁 Include both scripts below to support all browsers! -->
+
+  <!-- Loads <model-viewer> for modern browsers: -->
+  <script type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+  </script>
+</body>
+</html>
